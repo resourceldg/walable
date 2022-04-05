@@ -1,0 +1,128 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.realble"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/home/zen/Desktop/backup/realble/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/home/zen/Desktop/backup/realble/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <!--
+16          Needed only if your app makes the device discoverable to Bluetooth
+17         devices.
+18    -->
+19    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+19-->/home/zen/Desktop/backup/realble/android/app/src/debug/AndroidManifest.xml:9:5-78
+19-->/home/zen/Desktop/backup/realble/android/app/src/debug/AndroidManifest.xml:9:22-75
+20
+21    <!--
+22         Needed only if your app communicates with already-paired Bluetooth
+23         devices.
+24    -->
+25    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+25-->/home/zen/Desktop/backup/realble/android/app/src/debug/AndroidManifest.xml:13:5-76
+25-->/home/zen/Desktop/backup/realble/android/app/src/debug/AndroidManifest.xml:13:22-73
+26
+27    <!-- Needed only if your app uses Bluetooth scan results to derive physical location. -->
+28    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+28-->/home/zen/Desktop/backup/realble/android/app/src/debug/AndroidManifest.xml:16:5-79
+28-->/home/zen/Desktop/backup/realble/android/app/src/debug/AndroidManifest.xml:16:22-76
+29
+30    <!-- required for API 18 - 30 -->
+31    <uses-permission
+31-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-12:38
+32        android:name="android.permission.BLUETOOTH"
+32-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-52
+33        android:maxSdkVersion="30" />
+33-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-35
+34    <uses-permission
+34-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-15:38
+35        android:name="android.permission.BLUETOOTH_ADMIN"
+35-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-58
+36        android:maxSdkVersion="30" /> <!-- required for API 23 - 30 -->
+36-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-35
+37    <uses-permission-sdk-23
+37-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:18:5-20:38
+38        android:name="android.permission.ACCESS_COARSE_LOCATION"
+38-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-65
+39        android:maxSdkVersion="30" />
+39-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-35
+40    <uses-permission-sdk-23
+40-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-23:38
+41        android:name="android.permission.ACCESS_FINE_LOCATION"
+41-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-63
+42        android:maxSdkVersion="30" />
+42-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-35
+43    <!--
+44         add android:usesPermissionFlags="neverForLocation" when you can strongly assert that
+45         your app never derives physical location from Bluetooth scan results.
+46    -->
+47    <uses-permission
+47-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:31:5-73
+48        android:name="android.permission.BLUETOOTH_SCAN"
+48-->[:reactive_ble_mobile] /home/zen/Desktop/backup/realble/build/reactive_ble_mobile/intermediates/library_manifest/debug/AndroidManifest.xml:31:22-70
+49        android:usesPermissionFlags="neverForLocation" />
+49-->[com.polidea.rxandroidble2:rxandroidble:1.13.0] /home/zen/.gradle/caches/transforms-2/files-2.1/a08f32cd4686e6b3440a96c71bcf1335/jetified-rxandroidble-1.13.0/AndroidManifest.xml:23:9-55
+50
+51    <application
+52        android:name="android.app.Application"
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.6.0] /home/zen/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:24:18-86
+54        android:debuggable="true"
+55        android:icon="@mipmap/ic_launcher"
+56        android:label="realble" >
+57        <activity
+58            android:name="com.example.realble.MainActivity"
+59            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+60            android:exported="true"
+61            android:hardwareAccelerated="true"
+62            android:launchMode="singleTop"
+63            android:theme="@style/LaunchTheme"
+64            android:windowSoftInputMode="adjustResize" >
+65
+66            <!--
+67                 Specifies an Android theme to apply to this Activity as soon as
+68                 the Android process has started. This theme is visible to the user
+69                 while the Flutter UI initializes. After that, this theme continues
+70                 to determine the Window background behind the Flutter UI.
+71            -->
+72            <meta-data
+73                android:name="io.flutter.embedding.android.NormalTheme"
+74                android:resource="@style/NormalTheme" />
+75
+76            <intent-filter>
+77                <action android:name="android.intent.action.MAIN" />
+78
+79                <category android:name="android.intent.category.LAUNCHER" />
+80            </intent-filter>
+81        </activity>
+82        <!--
+83             Don't delete the meta-data below.
+84             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+85        -->
+86        <meta-data
+87            android:name="flutterEmbedding"
+88            android:value="2" />
+89
+90        <uses-library
+90-->[androidx.window:window:1.0.0-beta04] /home/zen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+91            android:name="androidx.window.extensions"
+91-->[androidx.window:window:1.0.0-beta04] /home/zen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+92            android:required="false" />
+92-->[androidx.window:window:1.0.0-beta04] /home/zen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+93        <uses-library
+93-->[androidx.window:window:1.0.0-beta04] /home/zen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+94            android:name="androidx.window.sidecar"
+94-->[androidx.window:window:1.0.0-beta04] /home/zen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+95            android:required="false" />
+95-->[androidx.window:window:1.0.0-beta04] /home/zen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+96    </application>
+97
+98</manifest>
